@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cliente y Factura Nueva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crear Cliente y Factura Nueva</h1>
+    <form id="clienteForm" action="/guardar_cliente" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <span id="emailError" class="error"></span>
+        </div>
+
+        <h2>Factura</h2>
+
+        <div class="form-group">
+            <label for="numeroFactura">Número de Factura:</label>
+            <input type="text" id="numeroFactura" name="numeroFactura" required>
+            <span id="facturaError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="fechaEmision">Fecha de Emisión:</label>
+            <input type="date" id="fechaEmision" name="fechaEmision" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Guardar Cliente y Factura">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
