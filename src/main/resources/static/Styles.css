@@ -1,0 +1,43 @@
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr th {
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr td {
+    padding: 5px;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 0;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 12px;
+}
